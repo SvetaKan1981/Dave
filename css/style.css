@@ -48,17 +48,16 @@
     		cursor: pointer;
     		text-align: center;
     		text-decoration: none;
-    		color:#95CBE4;
-
+            color: #98C3DF;
     	}
 
     	#headermenu ul li a:hover {
             text-decoration: none;
-            color: #ffffff;
-            opacity: 0.5;
+            color: #F2E8EA;
+            opacity:0,5;
         }
 
-        #headermenu li.activ {
+        #headermenu .nav ul li.activ {
             margin-left: 23px;
             margin-top: 16px;
             font-size: 17px;

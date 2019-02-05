@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+/* #header */
+    #header {
+        width: 100%;
+        height: 51px;
+        position: fixed;
+        z-index: 100;
+        background-color: #3097D1;
+    }
+
+    #headerinside {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* headerlogo*/
+        #headerlogo {
+            width: 85px;
+            height: 23px;
+            margin-left: 15px;
+            padding-top: 12px;
+            padding-bottom:12px;
+            float: left;
+        }
+        #headerlogo a {
+            display: block;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+    /* #headermenu */
+        #headermenu .nav li {
+    		list-style-type: none;
+    		display: block;
+            float: left;
+            margin-left: 15px;
+        }
+
+    	#headermenu li a {
+    		cursor: pointer;
+    		text-align: center;
+    		text-decoration: none;
+    		color:#95CBE4;
+    	}
+
+    	#headermenu li a:hover {
+            text-decoration: none;
+            color: #ffffff;
+            opacity: 0.5;
+        }
+
+        #headermenu li.activ {
+            padding-left: 100px;
+            color: #ffffff;
+        }
+
+        #headermenu input {
+            float: right;
+            width: 180px;
+            height: 32px;
+        }
+
+        #headermenu input:focus {
+            border: 1px solid grey;
+    	    box-shadow: 0px 0px 3px grey;
+        }
+
+    /* #headerinput */
+
+    /* #headerbell */
+
+    /* #headerphoto */
+
+/* #reserveheader */
+    #reserveheader {
+        width: 100%;
+        height: 51px;
+    }
+
+/* #wrapper */
+    #wrapper{
+        width: 100%;
+        height: 100%;
+    }
+
+    #wrapperinside{
+        max-width: 1200px;
+        margin: 0 auto;
+        outline: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* #left */
+    #left{
+        width: 277px;
+        background-color: red;
+    }
+
+/* #center */
+    #center{
+        width: 585px;
+        background-color: green;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+/* #right */
+    #right{
+        width: 277px;
+        background-color: blue;
+    }
+
+/* others */
+.clear{
+    clear: both;
+}

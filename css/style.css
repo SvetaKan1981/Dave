@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   outline: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* #header */
@@ -40,14 +41,15 @@
         #headermenu .nav li {
     		list-style-type: none;
             float: left;
-            margin-left: 15px;
-            margin-top: 16px;
+            margin-left: 13px;
+            margin-top: 13px;
         }
 
     	#headermenu li a {
     		cursor: pointer;
     		text-align: center;
     		text-decoration: none;
+            font-size: 14px;
             color: #98C3DF;
     	}
 
@@ -58,9 +60,9 @@
         }
 
         #headermenu li.activ a {
-            margin-left: 23px;
+            margin-left: 3px;
             margin-top: 16px;
-            font-size: 17px;
+            font-size: 15px;
             color: #ffffff;
         }
 
@@ -106,6 +108,7 @@
     #wrapper{
         width: 100%;
         height: 100%;
+            background-color: #F5F8FA;
     }
 
     #wrapperinside{
@@ -123,6 +126,7 @@
             background-image: url(img/instagram_6.jpg);
             margin-top: 20px;
             border: 1px solid #DFDFDF;
+            background-color: #ffffff;
         }
         #photoimg1{
             position: absolute;
@@ -138,10 +142,10 @@
         margin-top: 97px;
     }
     #block1inside  h6{
-        font-size: 18px;
+        font-size: 15px;
         color: #212529;
         text-align: center;
-        font-weight: normal;
+        font-weight: bold;
         text-decoration: none;
     }
     #block1inside  a{
@@ -149,7 +153,6 @@
     }
     #block1inside  p{
         text-align: center;
-        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 15px;
         margin-bottom: 20px;
         line-height: 1.5;
@@ -169,6 +172,35 @@
     ul.block1insideul li:last-child{
         border-right: none;
     }
+    #block2{
+        border: 1px solid #DFDFDF;
+        margin-top: 20px;
+    }
+    #block2inside h6{
+        font-size: 15px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    #block2inside a{
+        text-decoration: none;
+        color: #3097D1;
+        cursor: pointer;
+    }
+    #block2inside li{
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    #block2inside i{
+        font-size: 15px;
+        color: #6C757D;
+        margin-left: 16px;
+        margin-right: 15px;
+    }
+    #block2inside ul{
+        margin-bottom: 35px;
+    }
+
 /* #center */
     #center{
         width: 585px;

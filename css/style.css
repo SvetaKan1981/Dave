@@ -119,27 +119,30 @@
     }
 
 /* #left */
-    #left{
+    #left > div{
         width: 277px;
+        border: 1px solid #DFDFDF;
+        background-color: #ffffff;
     }
         #block1{
             background-image: url(img/instagram_6.jpg);
             margin-top: 20px;
-            border: 1px solid #DFDFDF;
-            background-color: #ffffff;
         }
         #photoimg1{
             position: absolute;
             z-index: 1;
         }
+    #block1inside, #block2inside, #block3inside{
+        padding: 17px;
+    }
     #block1inside .photoimg1{
         position: relative;
         z-index: 2;
         width: 100px;
         border: 3px solid #ffffff;
         border-radius: 50%;
-        margin-left: 85px;
-        margin-top: 97px;
+        margin-left: 65px;
+        margin-top: 75px;
     }
     #block1inside  h6{
         font-size: 15px;
@@ -158,7 +161,7 @@
         line-height: 1.5;
     }
     ul.block1insideul {
-        margin-left: 65px;
+        margin-left: 42px;
     }
     ul.block1insideul li {
         list-style-type: none;
@@ -166,23 +169,19 @@
         cursor: pointer;
         padding-right: 10px;
         padding-left: 10px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         border-right: 1px solid #808080;
     }
     ul.block1insideul li:last-child{
         border-right: none;
     }
-    #block2{
-        border: 1px solid #DFDFDF;
+    #block2, #block{
         margin-top: 20px;
-        background-color: #ffffff;
     }
     #block2inside h6{
         margin-bottom: 15px;
         font-size: 14px;
         font-weight: 600;
-        margin-left: 15px;
-        margin-top: 15px;
     }
     #block2inside a{
         text-decoration: none;
@@ -200,44 +199,35 @@
     }
     #block2inside li{
         list-style-type: none;
-        display: inline-block;
         margin-bottom: 5px;
         font-weight: normal;
         font-size: 14px;
     }
     #block2inside i{
+        width: 12px;
         font-size: 13px;
         text-align: center;
         color: #6C757D;
-        margin-left: 16px;
-        margin-right: 15px;
+        margin-right: 12px;
     }
     #block2inside ul{
-        margin-bottom: 30px;
-    }
-    #block3{
-        border: 1px solid #DFDFDF;
-        margin-top: 20px;
-        background-color: #ffffff;
+        margin-bottom: 20px;
     }
     .flex-container{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 27px;
+        margin-bottom: 10px;
     }
     #block3inside h6{
         margin-bottom: 15px;
         font-size: 14px;
         font-weight: 600;
-        margin-left: 15px;
-        margin-top: 15px;
     }
     #block3inside a{
         text-decoration: none;
         font-weight: normal;
         font-size: 12px;
-        padding-left: 5px;
         color: #3097D1;
         cursor: pointer;
     }

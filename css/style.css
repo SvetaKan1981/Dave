@@ -122,10 +122,12 @@
     #left > div{
         width: 277px;
         border: 1px solid #DFDFDF;
+        border-radius: 3px;
         background-color: #ffffff;
     }
         #block1{
             background-image: url(img/instagram_6.jpg);
+            border-radius: 3px 3px 0 0;
             margin-top: 20px;
         }
         #photoimg1{
@@ -175,7 +177,7 @@
     ul.block1insideul li:last-child{
         border-right: none;
     }
-    #block2, #block{
+    #block1, #block2, #block3, #block4, #block5, #block6{
         margin-top: 20px;
     }
     #block2inside h6{
@@ -231,12 +233,16 @@
         color: #3097D1;
         cursor: pointer;
     }
+    #block3inside .hr1 a{
+        margin-left: 5px;
+    }
     #block3inside a:hover{
         text-decoration: underline;
     }
 /* #center */
     #center{
         width: 585px;
+        margin-top: 20px;
         background-color: green;
         margin-left: 10px;
         margin-right: 10px;
@@ -245,7 +251,63 @@
 /* #right */
     #right{
         width: 277px;
-        background-color: blue;
+        margin-top: 20px;
+    }
+    #block4, #block5, #block6{
+        width: 277px;
+        border: 1px solid #DFDFDF;
+        border-radius: 3px;
+        background-color: #ffffff;
+    }
+    #block4inside, #block6inside{
+        padding: 18px;
+}
+    #block4inside h6{
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+        #photoimg2{
+            margin-bottom: 5px;
+        }
+    #block4inside p{
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .but{
+        width: 80px;
+        height: 28px;
+        border: 1px solid #3097D1;
+        border-radius:3px;
+        background-color: #ffffff;
+        color: #3097D1;
+        font-size: 12px;
+    }
+    .but:hover{
+        background-color: #3097D1;
+        color: #ffffff;
+    }
+    #block5{
+        height: 275px;
+    }
+    #block6inside{
+        font-size: 14px;
+    }
+    #block6inside a{
+        text-decoration: none;
+        color: #3097D1;
+        font-weight: normal;
+        font-size: 15px;
+        cursor: pointer;
+        padding-left: 3px;
+    }
+
+    #block6inside a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: #B70046;
     }
 
 /* others */

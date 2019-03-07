@@ -9,8 +9,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.close2').click(function(){
+                $(this).parent().hide();
+    	    });
+            $('.close').click(function(){
+                $('body').css('overflow','auto');
+        		$('#modul').hide();
+                $('#modwin').hide();
+    	    });
+            $('.mess').click(function(){
+                $('body').css('overflow','hidden');
+        		$('#modul').show();
+                $('#modwin').show();
+    	    });
+        });
+    </script>
 </head>
 <body>
+
 <div id="header">
     <div id="headerinside">
         <div id="headerlogo">
@@ -20,7 +39,7 @@
             <ul class="nav">
                 <li class="activ"><a href="#">Home</a></li>
                 <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
+                <li class="mess"><a href="#">Messages</a></li>
                 <li><a href="#">Docs</a></li>
             </ul>
         </div>
@@ -167,6 +186,7 @@
 
         <div id="right">
             <div id="advertising">
+                <div class="close2"><i class="fas fa-times"></i></div>
                 <p><a href="">Visit your profile!</a> Check your</br> self, you aren't looking well.</p>
             </div>
             <div id="block4">
@@ -232,5 +252,57 @@
         </div>
     </div>
 </div>
+<div id="modul"></div>
+<div id="modwin">
+    <div id="modwintop"><div class="close"><i class="fas fa-times"></i></div><h4>Messages</h4></div>
+    <div id="modwinbottom">
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Jacob Thornton</strong> and <strong>1 other</strong><br>
+            Aenean eu leo quam. Pellentesque ornare sem  quam …</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Mark Otto</strong> and <strong>3 others</strong>
+                Brunch sustainable placeat vegan bicycle rights yeah…</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Dave Gamache</strong>
+                Brunch sustainable placeat vegan bicycle rights yeah…</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Jacob Thornton</strong> and <strong>1 other</strong>
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam …</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Mark Ott</strong>o and <strong>3 others</strong>
+                Brunch sustainable placeat vegan bicycle rights yeah…</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Dave Gamache</strong>
+                Brunch sustainable placeat vegan bicycle rights yeah…</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Jacob Thornton</strong> and<strong> 1 other</strong>
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam …</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Mark Otto</strong> and <strong>3 others</strong>
+                Brunch sustainable placeat vegan bicycle rights yeah…</p>
+        </div>
+        <div>
+            <a href="#"><img  class="photoimg6"src="img/avatar-fat.jpg" width="40" height="40"></a>
+            <p><strong>Dave Gamache</strong>
+                Brunch sustainable placeat vegan bicycle rights yeah…</p>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
 </body>
 </html>

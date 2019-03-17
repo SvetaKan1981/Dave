@@ -76,11 +76,13 @@
             border: 1px solid #1C73A5;
             border-radius: 5px;
             padding-left: 10px;
+            transition-duration: 0.5s;
         }
         #headerinput #id1:focus {
             border: 1px solid grey;
-            width:300px;
-}
+            width: 300px;
+            transition-duration: 0.5s;
+        }
     /* #headerbell */
         #headerbell{
             float: right;
@@ -130,7 +132,6 @@
         background-color: #ffffff;
     }
         #block1{
-            background-image: url('../img/instagram_6.jpg');
             border-radius: 3px 3px 0 0;
             margin-top: 20px;
         }
@@ -238,6 +239,7 @@
         font-weight: normal;
         font-size: 12px;
         margin-left: 5px;
+        margin-bottom: 5px;
         color: #3097D1;
         cursor: pointer;
     }
@@ -322,6 +324,15 @@ margin-top: 20px;
 #centerbox1right1{
     margin-bottom: 30px;
 }
+
+#centerbox1right1>a{
+    display: block;
+    height: 182px;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 6px
+}
+
 #centerbox1right1 #time{
     float: right;
     color: #6C757D;
@@ -715,6 +726,217 @@ margin-top: 20px;
     .close{
         cursor: pointer;
     }
+
+
+            #docs #headermenu .nav li {
+        		list-style-type: none;
+                float: left;
+                margin-left: 13px;
+                margin-top: 13px;
+            }
+
+        	#docs #headermenu li a {
+        		cursor: pointer;
+        		text-align: center;
+        		text-decoration: none;
+                font-size: 14px;
+                color: #98C3DF;
+        	}
+
+        	#docs #headermenu ul li a:hover {
+                text-decoration: none;
+                color: #F2E8EA;
+                opacity:0,5;
+            }
+
+            #docs #headermenu li.activ a {
+                margin-left: 3px;
+                margin-top: 16px;
+                font-size: 15px;
+                color: #ffffff;
+            }
+
+        /* #headerinput */
+            #docs #headerinput #id1{
+                width: 180px;
+                height: 32px;
+                float: right;
+                margin-right: 23px;
+                margin-top: 9px;
+                border: 1px solid #1C73A5;
+                border-radius: 5px;
+                padding-left: 10px;
+            }
+            #docs #headerinput #id1:focus {
+                border: 1px solid grey;
+                width:300px;
+    }
+        /* #headerbell */
+            #docs #headerbell{
+                float: right;
+                margin-right: 17px;
+                margin-top: 15px;
+            }
+
+            #docs #headerbell i{
+                color: #98CBE8;
+                font-size: 18px;
+            }
+
+        /* #headerphoto */
+            #docs #headerphoto #photoimg{
+                width: 35px;
+                float: right;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-top: 9px;
+            }
+
+    /* #reserveheader */
+        #docs #reserveheader {
+            width: 100%;
+            height: 51px;
+        }
+        #docs #blockblue{
+            background: linear-gradient(#226D98, #2D8FC6)
+        }
+        #docs #blockbluecontent{
+            width: 900px;
+            margin-left: 55px;
+            padding-top: 45px;
+            padding-bottom: 70px;
+        }
+        #docs #blockbluecontent h2{
+            color: #FFFFFF;
+            font-size: 60px;
+        }
+        #docs #blockbluecontent p{
+            color: #90D6EA;
+            font-size: 25px;
+            font-weight: 200;
+        }
+        #docs #left{
+            float: left;
+            width: 950px;
+            margin-left: 58px;
+        }
+        #docs #left h1{
+            font-size: 35px;
+            margin-top:40px;
+        }
+        #docs .top{
+            font-size: 21px;
+            font-weight: 200;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #docs #left .text{
+            font-weight: 200;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+        #docs #left .text a{
+            text-decoration: none;
+            color: #3097D1;
+        }
+        #docs #left .text a:hover{
+            text-decoration: underline;
+        }
+        #docs #right{
+            position: fixed;
+            left: 78%;
+            width: 300px;
+            top: 61px;
+            background-color: #ffffff;
+        }
+        #docs #right a{
+            text-decoration: none;
+            color: #48301F;
+            padding-left: 20px;
+            font-size: 13px;
+            line-height: 2.5;
+            font-weight: 200;
+            margin-left: 30px;
+        }
+        #docs #right ul{
+            margin-left: 10px;
+        }
+        #docs #right li{
+            list-style: none;
+        }
+    #docs #right li:first-child{
+        border-left: 2px solid #3097D1;
+    }
+    #docs #blue a{
+        color:#3097D1;
+    }
+    #docs #right li #blue{
+        border-left: 2px solid #3097D1;
+    }
+    #docs .code{
+        width: 950px;
+        border: 1px solid #D3E0E9;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        margin-left: 56px;
+    }
+    #docs .code pre{
+        padding-left: 18px;
+        padding-top: 22px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    #docs #content{
+        width: 950px;
+        margin-left: 58px;
+    }
+    #docs #content h2{
+        margin-top: 15px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #docs #content .a{
+        color: #E53D8A;
+        font-size: 14px;
+    }
+    #docs #content p{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #docs .figure1{
+        height: 62px;
+        background-color: #ffffff;
+        border: 1px solid #d3e0e9;
+        border-radius: 3px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    #docs .figure1 .f{
+        color: #000099;
+        margin-left: -65px;
+    }
+    #docs #spisok li{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    #docs #content a{
+        text-decoration: none;
+        color: #3097D1;
+    }
+    #docs #content a:hover{
+        text-decoration: underline;
+    }
+
+
 /* others */
 .clear{
     clear: both;

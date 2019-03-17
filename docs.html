@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Тестовая страница">
+    <meta name="keywords" content="тест, страница, обучение">
+    <meta name="author" content="Кан Светлана">
+    <title>Dave</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.close2').click(function(){
+                $(this).parent().hide();
+    	    });
+            $('.close').click(function(){
+                $('body').css('overflow','auto');
+        		$('#modul').hide();
+                $('#modwin').hide();
+    	    });
+            $('.mess').click(function(){
+                $('body').css('overflow','hidden');
+        		$('#modul').show();
+                $('#modwin').show();
+    	    });
+        });
+    </script>
+</head>
+<body id="docs">
+<div id="header">
+    <div id="headerinside">
+        <div id="headerlogo">
+            <a href="#"><img src="img/brand-white.png" width="85" height="23"></a>
+        </div>
+        <div id="headermenu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="mess"><a href="#">Messages</a></li>
+                <li class="activ"><a href="docs.html">Docs</a></li>
+            </ul>
+        </div>
+        <div id="headerphoto">
+            <a href="#"><img src="img/avatar-dhg.png" width="35" height="35" id="photoimg"></a>
+        </div>
+        <div id="headerbell">
+            <i class="fas fa-bell"></i>
+        </div>
+        <div id="headerinput">
+             <input id="id1" value="Search">
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div id="reserveheader">
+</div>
+<div id="blockblue">
+    <div id="blockbluecontent">
+        <h2>Documentation</h2>
+        <p>Find out what's included in your Bootstrap theme and how to compile source files. Includes live examples and code snippets for every new component.</p>
+    </div>
+</div>
+<div id="left">
+    <h1>Intro</h1>
+        <p class="top">Hey there! You’re looking at the docs for an Official Bootstrap Theme—thanks for your purchase! This theme has been lovingly crafted by Bootstrap’s founders and friends to help you build awesome projects on the web. Let’s dive in.</p>
+        <p class="text">Each theme is designed as it’s own toolkit—a series of well designed, intuitive, and cohesive components—built on top of Bootstrap. If you’ve used Bootstrap itself, you’ll find this all super familiar, but with new aesthetics, new components, beautiful and extensive examples, and easy-to-use build tools and documentation.</p>
+        <p class="text">Since this theme is based on Bootstrap, and includes nearly everything Bootstrap itself does, you’ll want to give the <a href="#">official project documentation</a> a once over before continuing. There’s also <a href="#">the kitchen sink</a>—a one-page view of all Bootstrap’s components restyled by this theme.</p>
+        <p class="text">For everything else, including compiling and using this Bootstrap theme, read through the docs below.</p>
+        <p class="text">Thanks, and enjoy!</p>
+    <h1>What’s included</h1>
+        <p class="top">Within your Bootstrap theme you’ll find the following directories and files, grouping common resources and providing both compiled and minified distribution files, as well as raw source files.</p>
+</div>
+<div id="right">
+    <ul>
+        <li id="blue">
+            <a href="#">Intro</a>
+        </li>
+        <li>
+            <a href="#">What’s included</a>
+        </li>
+        <li>
+            <a href="#">Custom builds</a>
+        </li>
+        <li>
+            <a href="#">Basic template</a>
+        </li>
+        <li>
+            <a href="#">Components</a>
+        </li>
+        <li>
+            <a href="#">Plugins</a>
+        </li>
+    </ul>
+</div>
+<div class="clear"></div>
+<div class="code">
+    dsdskjfdskjnfsjdf
+</div>
+    <figure class="code">
+        <pre>
+theme/
+  ├── v3
+  └── v4
+      ├── gulpfile.js
+      ├── package.json
+      ├── README.md
+      ├── docs/
+      ├── scss/
+      │   ├── bootstrap/
+      │   ├── custom/
+      │   ├── variables.scss
+      │   └── toolkit.scss
+      ├── js/
+      │   ├── bootstrap/
+      │   └── custom/
+      ├── fonts/
+      │   ├── bootstrap-entypo.eot
+      │   ├── bootstrap-entypo.svg
+      │   ├── bootstrap-entypo.ttf
+      │   ├── bootstrap-entypo.woff
+      │   └── bootstrap-entypo.woff2
+      └── dist/
+          ├── toolkit.css
+          ├── toolkit.css.map
+          ├── toolkit.min.css
+          ├── toolkit.min.css.map
+          ├── toolkit.js
+          └── toolkit.min.js
+        </pre>
+    </figure>
+    <div>
+        <div id="content">
+        <div>
+        <h2>Getting started</h2>
+            <p>At the top level of your bootstrap theme you’ll find a directory for each major Bootstrap version that’s supported (currently both <span class="a">v3</span> and <span class="a">v4</span>). Within each directory you have all the relevant files for that version.</p>
+            <p>To view your Bootstrap Theme documentation, simply find the docs directory and open index.html in your favorite browser.</p>
+            <figure class="figure1">
+                <pre>
+                    <code>
+                        <span class="f">$</span> open docs/index.html
+                    </code>
+                </pre>
+            </figure>
+        </div>
+    <div>
+        <h2>Gulpfile.js</h2>
+            <p>If you’re after more customization we’ve also included a custom <a href="#">Gulp</a> file, which can be used to quickly re-compile a theme’s CSS and JS. You’ll need to install both <a href="#">Node</a> and Gulp before using our included <span class="a">gulpfile.js.</span></p>
+            <p>Once node is installed, run the following npm command to install Gulp.</p>
+            <figure class="figure1">
+                <pre>
+                    <code>
+                        <span class="f">$</span> npm install gulp -g
+                    </code>
+                </pre>
+            </figure>
+            <p>When you’re done, make sure you’ve installed the rest of the theme’s dependencies:</p>
+            <figure class="figure1">
+                <pre>
+                    <code>
+                        <span class="f">$</span> npm install
+                    </code>
+                </pre>
+            </figure>
+            <p>Now, modify your source files and run <span class="a">gulp</span> to generate new local <span>dist/</span> files automatically.<b> Be aware that this replaces existing</b> <span class="a">dist/</span> <b>files</b>, so proceed with caution.</p>
+    </div>
+    <div id="spisok">
+        <h2>Theme source code</h2>
+            <p>The <span class="a">scss/</span>, <span class="a">js/</span>, and <span class="a">fonts/</span> directories contain the source code for our CSS, JS, and icon fonts (respectively). Within the <span class="a">scss/</span> and <span class="a">js/</span> directories you’ll find two subdirectories:</p>
+        <ul>
+            <li><span class="a">bootstrap/</span>, which contains the most recently released version of Bootstrap (v4.0.0).</li>
+            <li><span class="a">custom/</span>, which contains all of the custom components and overrides authored specifically for this theme.</li>
+        </ul>
+            <p>The <span class="a">dist/</span> folder includes everything above, built into single CSS and JS files that can easily be integrated into your project.</p>
+            <p>The <span class="a">docs/</span> folder includes the source code for our documentation, as well as a handful of live examples.</p>
+            <p>The remaining files not specifically mentioned above provide support for packages, license information, and development.</p>
+    </div>
+</div>
+</body>
+</html>
